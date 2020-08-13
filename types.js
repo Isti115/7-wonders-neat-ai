@@ -43,3 +43,17 @@ export const ResourceTypes = [
   ResourceType.LOOM,
   ResourceType.PAPYRUS,
 ]
+
+// Science
+
+export const ScienceType = {
+  CALIPERS: 'calipers',
+  GEARS: 'gears',
+  PLATE: 'plate',
+}
+
+export const ScienceTypes = [
+  ScienceType.CALIPERS,
+  ScienceType.GEARS,
+  ScienceType.PLATE,
+]
