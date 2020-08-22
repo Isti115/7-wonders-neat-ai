@@ -13,6 +13,13 @@ export const getMissingResources = (have, need) => {
     const [h, ...hs] = have
     const [n, ...ns] = need
 
-    return getMissingResources(hs, (h === n) ? ns : [n, ...ns])
+    if (h == n) {
+      return getMissingResources(hs, ns)
+    } else if (h < n) {
+      return getMissingResources(hs, need)
+    } else if (n < h) {
+      return [n, ...getMissingResources(have, ns)]
+    }
+    // return getMissingResources(hs, (h === n) ? ns : [n, ...ns])
   }
 }

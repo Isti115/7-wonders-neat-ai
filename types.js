@@ -33,15 +33,22 @@ export const ResourceType = {
   PAPYRUS: 'papyrus',
 }
 
-export const ResourceTypes = [
+export const NaturalResourceTypes = [
   ResourceType.CLAY,
   ResourceType.ORE,
   ResourceType.STONE,
   ResourceType.WOOD,
-  //
+]
+
+export const ManufacturedResourceTypes = [
   ResourceType.GLASS,
   ResourceType.LOOM,
   ResourceType.PAPYRUS,
+]
+
+export const ResourceTypes = [
+  ...NaturalResourceTypes,
+  ...ManufacturedResourceTypes,
 ]
 
 // Science

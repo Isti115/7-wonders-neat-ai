@@ -9,6 +9,8 @@ p.cards.push(byName.ForestCave)
 p.cards.push(byName.Brickyard)
 p.cards.push(byName.TreeFarm)
 
+console.log(p.canPlayCard(byName.TrainingGround))
+
 Object.assign(repl.start({}).context, {
   cards,
   byName,

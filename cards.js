@@ -218,10 +218,38 @@ const military = [
   })),
 ]
 
+const culture = [
+
+]
+
+const commerce = [
+  ...[3, 7].map(playerCount => new Card({
+    name: 'East Trading Post', playerCount, age: 1, type: COMMERCE,
+  })),
+  ...[3, 7].map(playerCount => new Card({
+    name: 'West Trading Post', playerCount, age: 1, type: COMMERCE,
+  })),
+  ...[3, 6].map(playerCount => new Card({
+    name: 'Marketplace', playerCount, age: 1, type: COMMERCE,
+  })),
+]
+
+const science = [
+
+]
+
+const guild = [
+
+]
+
 const cards = [
   ...natural,
   ...manufactured,
   ...military,
+  ...commerce,
+  ...culture,
+  ...science,
+  ...guild,
 ].map(c => {
   if (c.cost.constructor.name === 'Array') {
     c.cost.sort()
