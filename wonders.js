@@ -5,6 +5,8 @@ export const rhodos = new Wonder(
   ''
 )
 
-export default const wonders = [
-  rhodos
+const wonders = [
+  rhodos,
 ]
+
+export default wonders
